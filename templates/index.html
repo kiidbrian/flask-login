@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Authentication App</title>
+        <link href="style.css" type="stylesheet" rel="stylesheet" />
+    </head>
+
+    <body>
+        <form method="post">
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" />
+            </div>
+            <input type="submit" />
+            {% if error %}
+                <small style="color: red">{{ error }}</small>
+            {% endif %}
+        </form>
+    </body>
+</html>
